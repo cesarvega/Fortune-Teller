@@ -23,10 +23,14 @@ In Xcode:
 
 ### 2. Add GoogleService-Info.plist to Xcode
 
-1. In Xcode, right-click on your project folder
-2. Select **Add Files to "Fortune-Teller"**
-3. Navigate to and select the `GoogleService-Info.plist` file (already created in your project folder)
-4. Make sure **Add to target** is checked for your app target
+⚠️ **SECURITY NOTE**: The GoogleService-Info.plist file contains sensitive API keys and should NEVER be committed to version control.
+
+1. Download the `GoogleService-Info.plist` file from Firebase Console (Project Settings > Your apps)
+2. In Xcode, right-click on your project folder
+3. Select **Add Files to "Fortune-Teller"**
+4. Navigate to and select the `GoogleService-Info.plist` file
+5. Make sure **Add to target** is checked for your app target
+6. **IMPORTANT**: The file is already in .gitignore - do NOT commit it to git
 
 ### 3. Configure Bundle Identifier
 
